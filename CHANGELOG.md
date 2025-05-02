@@ -1,6 +1,6 @@
 # Change history for app-reporting
 
-## [1.1.0](https://github.com/folio-org/app-reporting/tree/v1.1.0) (IN PROGRESS)
+## [1.1.0](https://github.com/folio-org/app-reporting/tree/v1.1.0) (2025-05-02)
 
 * Add `uiModules` clause.
 
