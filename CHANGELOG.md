@@ -1,5 +1,9 @@
 # Change history for app-reporting
 
+## [1.1.1](https://github.com/folio-org/app-reporting/tree/v1.1.1) (IN PROGRESS)
+
+* Set specific versions for `mod-reporting` and `folio_ldp`. Towards FOLREL-762.
+
 ## [1.1.0](https://github.com/folio-org/app-reporting/tree/v1.1.0) (2025-05-02)
 
 * Add `uiModules` clause.
