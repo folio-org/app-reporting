@@ -1,5 +1,9 @@
 # Change history for app-reporting
 
+## [1.1.2](https://github.com/folio-org/app-reporting/tree/v1.1.2) (2025-05-19)
+
+* Remove `-SNAPSHOT` suffix from version number in `pom.xml`.
+
 ## [1.1.1](https://github.com/folio-org/app-reporting/tree/v1.1.1) (2025-05-19)
 
 * Set specific versions for `mod-reporting` and `folio_ldp`. Towards FOLREL-762.
