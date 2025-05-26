@@ -1,6 +1,6 @@
 # Change history for app-reporting
 
-## [1.1.3](https://github.com/folio-org/app-reporting/tree/v1.1.3) (IN PROGRESS)
+## [1.1.3](https://github.com/folio-org/app-reporting/tree/v1.1.3) (2025-05-26)
 
 * Wind `app-platform-minimal` dependency back to `^2.0.0-SNAPSHOT`.
 
