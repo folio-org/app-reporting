@@ -12,13 +12,13 @@
   "modules": [
     {
       "name": "mod-reporting",
-      "version": "1.4.0"
+      "version": "1.4.1"
     }
   ],
   "uiModules": [
     {
       "name": "folio_ldp",
-      "version": "3.0.2"
+      "version": "3.1.2"
     }
   ]
 }
