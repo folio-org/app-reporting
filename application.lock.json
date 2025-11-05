@@ -1,6 +1,6 @@
 {
   "name": "app-reporting",
-  "version": "1.3.0-SNAPSHOT.100100000002797",
+  "version": "1.3.0-SNAPSHOT.100200000000044",
   "description": "Reporting app for FOLIO Sunflower",
   "platform": "complete",
   "dependencies": [
@@ -12,7 +12,7 @@
   "modules": [
     {
       "name": "mod-reporting",
-      "version": "1.5.0-SNAPSHOT.144"
+      "version": "1.5.0-SNAPSHOT.146"
     }
   ],
   "uiModules": [
