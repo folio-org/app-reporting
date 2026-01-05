@@ -13,14 +13,14 @@
   "modules": [
     {
       "name": "mod-reporting",
-      "version": "1.4.1",
+      "version": "latest",
       "preRelease": "false"
     }
   ],
   "uiModules": [
     {
       "name": "folio_ldp",
-      "version": "3.1.2",
+      "version": "latest",
       "preRelease": "false"
     }
   ]
