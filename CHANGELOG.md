@@ -1,6 +1,10 @@
 # Change history for app-reporting
 
-## [1.2.0](https://github.com/folio-org/app-reporting/tree/v1.2.0) (IN PROGRESS)
+## [1.3.0](https://github.com/folio-org/app-reporting/tree/v1.3.0) (2026-01-05)
+
+* Bump `mod-reporting` and `folio_ldp` dependencies both to "latest".
+
+## [1.2.0](https://github.com/folio-org/app-reporting/tree/v1.2.0) (2025-06-04)
 
 * Bump `mod-reporting` dependency to 1.4.1 and `folio_ldp` to 3.1.2.
 
