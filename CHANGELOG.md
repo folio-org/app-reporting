@@ -1,5 +1,9 @@
 # Change history for app-reporting
 
+## [1.5.0](https://github.com/folio-org/app-reporting/tree/v1.5.0) (2026-01-05)
+
+* No real changes, re-release to sort out confusion about git tags.
+
 ## [1.4.0](https://github.com/folio-org/app-reporting/tree/v1.4.0) (2026-01-05)
 
 * Bump `mod-reporting` and `folio_ldp` dependencies both to "latest".
