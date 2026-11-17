@@ -1,17 +1,17 @@
 {
-  "id" : "app-reporting-1.6.0-SNAPSHOT.100200000011333",
+  "id" : "app-reporting-1.6.0-SNAPSHOT.100200000012140",
   "name" : "app-reporting",
-  "version" : "1.6.0-SNAPSHOT.100200000011333",
+  "version" : "1.6.0-SNAPSHOT.100200000012140",
   "description" : "Reporting app for FOLIO Sunflower",
   "modules" : [ {
-    "id" : "mod-reporting-1.7.0-SNAPSHOT.182",
+    "id" : "mod-reporting-1.7.0-SNAPSHOT.217",
     "name" : "mod-reporting",
-    "version" : "1.7.0-SNAPSHOT.182"
+    "version" : "1.7.0-SNAPSHOT.217"
   } ],
   "uiModules" : [ {
-    "id" : "folio_ldp-3.3.1099000000000352",
+    "id" : "folio_ldp-3.3.1099000000000360",
     "name" : "folio_ldp",
-    "version" : "3.3.1099000000000352"
+    "version" : "3.3.1099000000000360"
   } ],
   "dependencies" : [ {
     "name" : "app-platform-minimal",
@@ -19,7 +19,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-reporting-1.7.0-SNAPSHOT.182",
+    "id" : "mod-reporting-1.7.0-SNAPSHOT.217",
     "name" : "reporting module",
     "requires" : [ {
       "id" : "settings",
@@ -129,7 +129,7 @@
       "subPermissions" : [ "ldp.read", "ldp.config.read", "ldp.config.edit", "ldp.version.read", "ldp.updates.read", "ldp.processes.read" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-reporting:1.7.0-SNAPSHOT.182",
+      "dockerImage" : "folioci/mod-reporting:1.7.0-SNAPSHOT.217",
       "dockerPull" : true,
       "env" : [ {
         "name" : "LOGCAT",
@@ -151,7 +151,7 @@
     }
   } ],
   "uiModuleDescriptors" : [ {
-    "id" : "folio_ldp-3.3.1099000000000352",
+    "id" : "folio_ldp-3.3.1099000000000360",
     "name" : "Dashboard for the Library Data Platform",
     "requires" : [ {
       "id" : "ldp-query",
@@ -160,7 +160,10 @@
       "id" : "settings",
       "version" : "1.0"
     } ],
-    "optional" : [ ],
+    "optional" : [ {
+      "id" : "users",
+      "version" : "15.1 16.0"
+    } ],
     "permissionSets" : [ {
       "permissionName" : "module.ldp.enabled",
       "displayName" : "UI: Reporting module is enabled",
@@ -173,22 +176,22 @@
     }, {
       "permissionName" : "ui-ldp.settings.record-limits",
       "displayName" : "Settings (Reporting): Can modify default record limits",
-      "subPermissions" : [ "settings.ldp.enabled", "mod-settings.entries.item.post", "mod-settings.entries.item.put", "mod-settings.global.read.ui-ldp.admin", "mod-settings.global.write.ui-ldp.admin" ],
+      "subPermissions" : [ "settings.ldp.enabled", "mod-settings.entries.collection.get", "mod-settings.entries.item.post", "mod-settings.entries.item.put", "mod-settings.global.read.ui-ldp.admin", "mod-settings.global.write.ui-ldp.admin" ],
       "visible" : true
     }, {
       "permissionName" : "ui-ldp.settings.table-availability",
       "displayName" : "Settings (Reporting): Can select which tables are available to search",
-      "subPermissions" : [ "settings.ldp.enabled", "mod-settings.entries.item.post", "mod-settings.entries.item.put", "mod-settings.global.read.ui-ldp.admin", "mod-settings.global.write.ui-ldp.admin" ],
+      "subPermissions" : [ "settings.ldp.enabled", "mod-settings.entries.collection.get", "mod-settings.entries.item.post", "mod-settings.entries.item.put", "mod-settings.global.read.ui-ldp.admin", "mod-settings.global.write.ui-ldp.admin" ],
       "visible" : true
     }, {
       "permissionName" : "ui-ldp.settings.dbinfo",
       "displayName" : "Settings (Reporting): Can modify Reporting database connection details",
-      "subPermissions" : [ "settings.ldp.enabled", "ldp.config.read", "ldp.config.edit" ],
+      "subPermissions" : [ "settings.ldp.enabled", "mod-settings.entries.collection.get", "mod-settings.entries.item.post", "mod-settings.entries.item.put", "mod-settings.global.read.ui-ldp.admin", "mod-settings.global.write.ui-ldp.admin" ],
       "visible" : true
     }, {
       "permissionName" : "ui-ldp.settings.tqrepos",
       "displayName" : "Settings (Reporting): Can modify templated-query repos configuration",
-      "subPermissions" : [ "settings.ldp.enabled", "ldp.config.read", "ldp.config.edit" ],
+      "subPermissions" : [ "settings.ldp.enabled", "mod-settings.entries.collection.get", "mod-settings.entries.item.post", "mod-settings.entries.item.put", "mod-settings.global.read.ui-ldp.admin", "mod-settings.global.write.ui-ldp.admin", "users.collection.get" ],
       "visible" : true
     }, {
       "permissionName" : "ui-ldp.query-builder.view",
@@ -241,14 +244,14 @@
     } ],
     "metadata" : {
       "stripes" : {
-        "actsAs" : [ "app", "settings" ],
-        "displayName" : "ui-ldp.meta.title",
-        "route" : "/ldp",
         "icons" : [ {
-          "name" : "app",
           "alt" : "Dashboard for the Library Data Platform",
+          "name" : "app",
           "title" : "Reporting"
-        } ]
+        } ],
+        "route" : "/ldp",
+        "actsAs" : [ "app", "settings" ],
+        "displayName" : "ui-ldp.meta.title"
       }
     }
   } ]
