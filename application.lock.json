@@ -1,12 +1,12 @@
 {
-  "id" : "app-reporting-1.6.0-SNAPSHOT.100200000012141",
+  "id" : "app-reporting-1.6.0-SNAPSHOT.100200000012145",
   "name" : "app-reporting",
-  "version" : "1.6.0-SNAPSHOT.100200000012141",
+  "version" : "1.6.0-SNAPSHOT.100200000012145",
   "description" : "Reporting app for FOLIO Sunflower",
   "modules" : [ {
-    "id" : "mod-reporting-1.7.0-SNAPSHOT.223",
+    "id" : "mod-reporting-1.7.0-SNAPSHOT.225",
     "name" : "mod-reporting",
-    "version" : "1.7.0-SNAPSHOT.223"
+    "version" : "1.7.0-SNAPSHOT.225"
   } ],
   "uiModules" : [ {
     "id" : "folio_ldp-3.3.1099000000000360",
@@ -19,7 +19,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-reporting-1.7.0-SNAPSHOT.223",
+    "id" : "mod-reporting-1.7.0-SNAPSHOT.225",
     "name" : "reporting module",
     "requires" : [ {
       "id" : "settings",
@@ -129,7 +129,7 @@
       "subPermissions" : [ "ldp.read", "ldp.config.read", "ldp.config.edit", "ldp.version.read", "ldp.updates.read", "ldp.processes.read" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-reporting:1.7.0-SNAPSHOT.223",
+      "dockerImage" : "folioci/mod-reporting:1.7.0-SNAPSHOT.225",
       "dockerPull" : true,
       "env" : [ {
         "name" : "LOGCAT",
